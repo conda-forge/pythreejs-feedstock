@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pythreejs-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pythreejs-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pythreejs-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pythreejs-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pythreejs-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pythreejs-feedstock/branch/master)
