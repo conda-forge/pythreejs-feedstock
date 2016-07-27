@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
     name: pythreejs
@@ -7,10 +7,10 @@ package:
 source:
     fn: pythreejs-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/p/pythreejs/pythreejs-{{ version }}.tar.gz
-    md5: 7ccfe87baa0fa882a0965d0abd4d0de5
+    sha1: 0fd62ce51c72697bf5c16e212b7474518977365a
 
 build:
-    number: 2
+    number: 0
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
