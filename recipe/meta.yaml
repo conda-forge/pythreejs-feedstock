@@ -1,5 +1,5 @@
-{% set version = "0.3.1" %}
-{% set sha256 = "34433be15177f3db5bbea324a3c45971c0257c099066d03d48bfae40c0693c63" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "6e15645dc8cf006fb9bda69fd274475bb9df5d164d3ed1c63d41f8d68b154c57" %}
 
 package:
     name: pythreejs
@@ -18,10 +18,11 @@ requirements:
     build:
         - python
         - setuptools
-        - jupyter
     run:
         - python
-        - ipywidgets >=6,<7
+        - ipywidgets >=7,<8
+        - numpy
+        - traittypes
 
 test:
     imports:
