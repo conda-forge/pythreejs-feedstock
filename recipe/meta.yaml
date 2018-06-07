@@ -1,5 +1,5 @@
-{% set version = "1.0.0" %}
-{% set sha256 = "14c92892e238d935e44c8876e260e1ab1bbd0a06c476fcd2c2c77c225fb6cf60" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "209bad1c665d73464aff393ed2939d38d7fc23d20407629bfadef82480d3681a" %}
 
 package:
     name: pythreejs
