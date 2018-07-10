@@ -14,9 +14,8 @@ Summary: A Python / ThreeJS bridge utilizing the Jupyter widget infrastructure.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pythreejs-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pythreejs-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/pythreejs-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pythreejs-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pythreejs-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pythreejs-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pythreejs-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pythreejs-feedstock)
 
 Current release info
 ====================
