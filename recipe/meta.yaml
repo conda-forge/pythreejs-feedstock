@@ -11,6 +11,7 @@ source:
     sha256: {{ sha256 }}
 
 build:
+    noarch: python
     number: 0
     script: python -m pip install --no-deps --ignore-installed .
 
@@ -32,7 +33,7 @@ test:
         - pythreejs
 
 about:
-    home: https://github.com/jovyan/pythreejs
+    home: https://github.com/jupyter-widgets/pythreejs
     license: BSD 3-Clause
     summary: A Python / ThreeJS bridge utilizing the Jupyter widget infrastructure.
 
