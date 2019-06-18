@@ -1,5 +1,5 @@
-{% set version = "2.0.2" %}
-{% set sha256 = "fa7b787f29006a89b8cc5450319756b92304317bb17d4125ccf89c51a3da3c5c" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "079fd1ab888ab2aa6b6ea06edb152706fce0ef0036f5a94c0a3cc5f06afb0f01" %}
 
 package:
     name: pythreejs
@@ -11,7 +11,7 @@ source:
     sha256: {{ sha256 }}
 
 build:
-    number: 1001
+    number: 0
     script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
