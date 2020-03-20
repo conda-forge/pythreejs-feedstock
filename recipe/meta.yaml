@@ -1,41 +1,42 @@
-{% set version = "2.1.1" %}
-{% set sha256 = "a5e795831d9d4e896440d7cd0a8b6022cf19cf85dd45c621a17621663df2f836" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "c05f52932efd58ff18beb333a6b2bb80341e980718a313b74821c4a5c8640721" %}
 
 package:
-    name: pythreejs
-    version: {{ version }}
+  name: pythreejs
+  version: {{ version }}
 
 source:
-    fn: pythreejs-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/p/pythreejs/pythreejs-{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+  fn: pythreejs-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/pythreejs/pythreejs-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-    noarch: python
-    number: 0
-    script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-    build:
-        - pip
-        - python
-        - setuptools
-        - nodejs
-    run:
-        - python
-        - ipywidgets >=7,<8
-        - numpy
-        - traittypes
-        - ipydatawidgets
+  build:
+    - pip
+    - python
+    - setuptools
+    - nodejs
+  run:
+    - python
+    - ipywidgets >=7,<8
+    - numpy
+    - traittypes
+    - ipydatawidgets
 
 test:
-    imports:
-        - pythreejs
+  imports:
+    - pythreejs
 
 about:
-    home: https://github.com/jupyter-widgets/pythreejs
-    license: BSD 3-Clause
-    summary: A Python / ThreeJS bridge utilizing the Jupyter widget infrastructure.
+  home: https://github.com/jupyter-widgets/pythreejs
+  license: BSD 3-Clause
+  license_file: LICENSE
+  summary: A Python / ThreeJS bridge utilizing the Jupyter widget infrastructure.
 
 extra:
   recipe-maintainers:
