@@ -1,5 +1,5 @@
-{% set version = "2.2.1" %}
-{% set sha256 = "acceeac346054bcc280bf93f494557e6f5ab404860cfee584d72a6c3dde16463" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "231b7fced2485fa0945e01e4dd11fbb92d4aef74376a5ebe6e7c400dcc4e3c25" %}
 
 package:
   name: pythreejs
@@ -16,7 +16,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - pip
     - python
     - setuptools
