@@ -21,6 +21,7 @@ requirements:
     - python
     - setuptools
     - nodejs
+    - jupyterlab >=3,<4
   run:
     - python
     - ipywidgets >=7,<8
