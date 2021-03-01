@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
     - setuptools
     - nodejs
     - jupyterlab >=3,<4
   run:
-    - python
+    - python >=2.7
     - ipywidgets >=7,<8
     - numpy
     - traittypes
@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://github.com/jupyter-widgets/pythreejs
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: A Python / ThreeJS bridge utilizing the Jupyter widget infrastructure.
 
