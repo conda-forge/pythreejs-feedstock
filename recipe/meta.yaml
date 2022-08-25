@@ -1,5 +1,5 @@
-{% set version = "2.3.0" %}
-{% set sha256 = "231b7fced2485fa0945e01e4dd11fbb92d4aef74376a5ebe6e7c400dcc4e3c25" %}
+{% set version = "2.4.0" %}
+{% set sha256 = "c7dfa8b2b7c46bff92babaf4453f6c73f2ef1b7622a8b030f68838791ef3643a" %}
 
 package:
   name: pythreejs
@@ -18,16 +18,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3.7
     - setuptools
     - nodejs
     - jupyterlab >=3,<4
   run:
-    - python >=2.7
-    - ipywidgets >=7,<8
-    - numpy
-    - traittypes
+    - python >=3.7
     - ipydatawidgets
+    - ipywidgets >=7,<9
+    - numpy
+    - traitlets
 
 test:
   imports:
