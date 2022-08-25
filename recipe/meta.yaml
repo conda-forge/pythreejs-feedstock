@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3.7
     - setuptools
     - nodejs
     - jupyterlab >=3,<4
   run:
-    - python >=2.7
-    - ipywidgets >=7,<8
+    - python >=3.7
+    - ipywidgets >=7,<9
     - numpy
     - traittypes
     - ipydatawidgets
