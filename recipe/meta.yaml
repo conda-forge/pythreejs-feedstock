@@ -24,10 +24,10 @@ requirements:
     - jupyterlab >=3,<4
   run:
     - python >=3.7
+    - ipydatawidgets
     - ipywidgets >=7,<9
     - numpy
-    - traittypes
-    - ipydatawidgets
+    - traitlets
 
 test:
   imports:
