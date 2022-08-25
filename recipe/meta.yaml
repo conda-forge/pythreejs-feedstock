@@ -36,7 +36,7 @@ test:
 about:
   home: https://github.com/jupyter-widgets/pythreejs
   license: BSD-3-Clause
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: A Python / ThreeJS bridge utilizing the Jupyter widget infrastructure.
 
 extra:
