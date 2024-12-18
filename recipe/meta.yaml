@@ -7,29 +7,31 @@ package:
 
 source:
   fn: pythreejs-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/p/pythreejs/pythreejs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pythreejs/pythreejs-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
     - nodejs
     - jupyterlab >=3,<4
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - ipydatawidgets
     - ipywidgets >=7,<9
     - numpy
     - traitlets
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pythreejs
 
